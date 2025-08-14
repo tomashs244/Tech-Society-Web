@@ -1,0 +1,169 @@
+:root {
+    --maxw:1200px;
+    --bkcolor: #0d0d0d;
+    --clyellow2: rgb(255, 202, 12);
+    --clyellow: rgb(252, 252, 103);
+}
+
+
+
+
+body {
+  font-family:Inter, system-ui;
+  background-color: var(--bkcolor);
+  color:#e6eef8;
+  min-height:100vh;
+  max-width:var(--maxw);
+  margin:28px auto;
+  padding:0 20px;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--bkcolor);
+    padding: 15px 30px;
+}
+
+.containerLogo {
+    text-align: center;
+}
+
+.logo {
+  width:76px;
+  height:76px;
+  border-radius:12px;   border: 0.2px solid white;
+  background-color: #111;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800; font-size: 20px;
+  color:#ffffff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color:var(--clyellow2);
+   
+    padding: 0px 20px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/assets/img/fondos/cityYellow.png) center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--clyellow);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--clyellow2);
+}
+
+/* Secciones */
+.section {
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color:var(--clyellow2);
+}
+
+/* Tarjetas */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Sección oscura */
+.dark {
+    background-color: #111;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color:var(--clyellow);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--clyellow2);
+}
+
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1a1a1a;
+    font-size: 0.9rem;
+}
