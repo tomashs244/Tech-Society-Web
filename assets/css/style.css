@@ -66,7 +66,7 @@ nav a:hover {
 .hero {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(/assets/img/fondos/cityYellow.png) center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(./assets/img/fondos/cityYellow.png) center/cover no-repeat;
 }
 
 .hero h1 {
@@ -167,3 +167,4 @@ footer {
     background-color: #1a1a1a;
     font-size: 0.9rem;
 }
+
